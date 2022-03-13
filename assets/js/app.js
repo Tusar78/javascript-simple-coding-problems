@@ -25,12 +25,43 @@
 // console.log(toRoundMyRandomNumber);
 
 // Generate Random Number in 10 Times
-const customRanNumberGenerate = (min, max, times) => {
-  for (let i = 0; i < times; i++) {
-    const customRandomNumber = Math.round(Math.random() * (max - min) + min);
-    console.log(customRandomNumber);
-  }
-};
-customRanNumberGenerate(1, 5, 10);
+// const customRanNumberGenerate = (min, max, times) => {
+//   for (let i = 0; i < times; i++) {
+//     const customRandomNumber = Math.round(Math.random() * (max - min) + min);
+//     console.log(customRandomNumber);
+//   }
+// };
+// customRanNumberGenerate(1, 5, 10);
 
 // Swapping Variable
+// let first = 5;
+// let second = 7;
+// console.log(first, second);
+
+// First Approach [Using temporary variable]
+// let temp = first;
+// first = second;
+// second = temp;
+// console.log(first, second);
+
+// Second Approach [Using destructuring assignment]
+// [first, second] = [second, first]
+// console.log(first, second);
+
+// Third Approach [Using Arithmetic Operators]
+// let a = 4;
+// let b = 2;
+// console.log(a, b);
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
+// Fourth Approach [Using XOR Operator]
+let first = 4;
+let second = 2;
+console.log(first, second);
+first = first ^ second;
+second = first ^ second;
+first = first ^ second;
+console.log(first, second);
