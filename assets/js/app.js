@@ -93,13 +93,36 @@ minNumber(45, 21, 320)
 */
 
 // Array Sum
-const arrayTotal = (numbers) => {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  return sum;
-};
+// const arrayTotal = (numbers) => {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   return sum;
+// };
 
-const total = arrayTotal([5, 7, 9, 5, 4]);
-console.log(total);
+// const total = arrayTotal([5, 7, 9, 5, 4]);
+// console.log(total);
+
+// Largest element in an array
+// const largestElement = numbers => {
+//     let largest = numbers[0];
+//     let len = numbers.length;
+//     for (let i = 0; i < len; i++) {
+//         if (numbers[i] < largest) {
+//             largest = numbers[i];
+//         }        
+//     }
+//     return largest;
+// }
+
+// const largeItem = largestElement([10, 20, 30, 40, 50, 60]);
+// console.log(largeItem);
+
+// Fibonacci series 
+let fibo = [0, 1];
+for (let i = 2; i < 10; i++) {
+    // nth = (n - 1)th + (n - 2)th;
+    fibo[i] = fibo[i - 1] + fibo[i - 2];    
+}
+console.log(fibo);
