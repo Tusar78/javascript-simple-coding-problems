@@ -111,7 +111,7 @@ minNumber(45, 21, 320)
 //     for (let i = 0; i < len; i++) {
 //         if (numbers[i] < largest) {
 //             largest = numbers[i];
-//         }        
+//         }
 //     }
 //     return largest;
 // }
@@ -119,10 +119,48 @@ minNumber(45, 21, 320)
 // const largeItem = largestElement([10, 20, 30, 40, 50, 60]);
 // console.log(largeItem);
 
-// Fibonacci series 
+// Fibonacci series
+/*
 let fibo = [0, 1];
 for (let i = 2; i < 10; i++) {
     // nth = (n - 1)th + (n - 2)th;
     fibo[i] = fibo[i - 1] + fibo[i - 2];    
 }
 console.log(fibo);
+*/
+
+// Fibonacci series with function
+// const fiboFunc = (times) => {
+//   if (typeof times != 'number') {
+//     return 'Please enter valid data!'    
+//   }
+//   let fibo = [0, 1];
+//   for (let i = 2; i < times; i++) {
+//     fibo[i] = fibo[i - 1] + fibo[i - 2];
+//   }
+//   return fibo;
+// };
+
+// const tenTimesFibonacci = fiboFunc('[15]');
+// console.log(tenTimesFibonacci);
+
+// Remove Duplicates Array in an Array
+const friends = ['Tusar', 'Rakib', 'Sharif', 'Shuvo', 'Tusar', 'Rakib', 'Selim', 'Manun', 'Sharif', 'Rabbi']
+
+const removeDuplicates = names => {
+    const uniqueValue = [];
+    for (let i = 0; i < names.length; i++) {
+        if (uniqueValue.indexOf(names[i]) == -1) {
+            uniqueValue.push(names[i])
+        }
+    }
+    // for (const name of names) {
+    //     if (uniqueValue.indexOf(name) == -1) {
+    //         uniqueValue.push(name)
+    //     }
+    //     console.log(name);
+    // }
+
+    return uniqueValue;
+}
+console.log(removeDuplicates(friends));
