@@ -58,10 +58,48 @@
 // console.log(a, b);
 
 // Fourth Approach [Using XOR Operator]
-let first = 4;
-let second = 2;
-console.log(first, second);
-first = first ^ second;
-second = first ^ second;
-first = first ^ second;
-console.log(first, second);
+// let first = 4;
+// let second = 2;
+// console.log(first, second);
+// first = first ^ second;
+// second = first ^ second;
+// first = first ^ second;
+// console.log(first, second);
+
+// Find Maximum Number and Minimum Number
+/*
+const maxNumber = (num1, num2, num3) => {
+    console.log(num1, num2, num3);
+    if (num1 > num2 && num1 > num3) {
+        console.log('Largest one: ', num1);
+    } else if (num2 > num1 && num2 > num3) {
+        console.log('Largest one: ', num2);
+    } else {
+        console.log('Largest one: ', num3);
+    }
+}
+maxNumber(45, 21, 320)
+
+const minNumber = (num1, num2, num3) => {
+    if (num1 < num2 && num1 < num3) {
+        console.log('Smallest one: ', num1);
+    } else if (num2 < num1 && num2 < num3) {
+        console.log('Smallest one: ', num2);
+    } else {
+        console.log('Smallest one: ', num3);
+    }
+}
+minNumber(45, 21, 320)
+*/
+
+// Array Sum
+const arrayTotal = (numbers) => {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum;
+};
+
+const total = arrayTotal([5, 7, 9, 5, 4]);
+console.log(total);
