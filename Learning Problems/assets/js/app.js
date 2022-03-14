@@ -166,13 +166,26 @@ console.log(fibo);
 // console.log(removeDuplicates(friends));
 
 // String Reverse 
-const reverseString = text => {
-    let reverse = '';
-    for (const item of text) {
-        reverse = item + reverse;
-    }
-    return reverse;
-}
+// const reverseString = text => {
+//     let reverse = '';
+//     for (const item of text) {
+//         reverse = item + reverse;
+//     }
+//     return reverse;
+// }
 
-const greetings = reverseString('Hi, good morning~')
-console.log(greetings);
+// const greetings = reverseString('Hi, good morning~')
+// console.log(greetings);
+
+// Foo bar challenge
+for (let i = 1; i <= 50; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log(i, 'Foo-bar');      
+    } else if (i % 3 == 0) {
+        console.log(i, 'Foo');      
+    } else if (i % 5 == 0) {
+        console.log(i, 'bar');
+    } else {
+        console.log(i);
+    }
+}
