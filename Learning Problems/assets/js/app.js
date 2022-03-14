@@ -145,22 +145,34 @@ console.log(fibo);
 // console.log(tenTimesFibonacci);
 
 // Remove Duplicates Array in an Array
-const friends = ['Tusar', 'Rakib', 'Sharif', 'Shuvo', 'Tusar', 'Rakib', 'Selim', 'Manun', 'Sharif', 'Rabbi']
+// const friends = ['Tusar', 'Rakib', 'Sharif', 'Shuvo', 'Tusar', 'Rakib', 'Selim', 'Manun', 'Sharif', 'Rabbi']
 
-const removeDuplicates = names => {
-    const uniqueValue = [];
-    for (let i = 0; i < names.length; i++) {
-        if (uniqueValue.indexOf(names[i]) == -1) {
-            uniqueValue.push(names[i])
-        }
+// const removeDuplicates = names => {
+//     const uniqueValue = [];
+//     for (let i = 0; i < names.length; i++) {
+//         if (uniqueValue.indexOf(names[i]) == -1) {
+//             uniqueValue.push(names[i])
+//         }
+//     }
+//     // for (const name of names) {
+//     //     if (uniqueValue.indexOf(name) == -1) {
+//     //         uniqueValue.push(name)
+//     //     }
+//     //     console.log(name);
+//     // }
+
+//     return uniqueValue;
+// }
+// console.log(removeDuplicates(friends));
+
+// String Reverse 
+const reverseString = text => {
+    let reverse = '';
+    for (const item of text) {
+        reverse = item + reverse;
     }
-    // for (const name of names) {
-    //     if (uniqueValue.indexOf(name) == -1) {
-    //         uniqueValue.push(name)
-    //     }
-    //     console.log(name);
-    // }
-
-    return uniqueValue;
+    return reverse;
 }
-console.log(removeDuplicates(friends));
+
+const greetings = reverseString('Hi, good morning~')
+console.log(greetings);
