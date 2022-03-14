@@ -178,14 +178,31 @@ console.log(fibo);
 // console.log(greetings);
 
 // Foo bar challenge
-for (let i = 1; i <= 50; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log(i, 'Foo-bar');      
-    } else if (i % 3 == 0) {
-        console.log(i, 'Foo');      
-    } else if (i % 5 == 0) {
-        console.log(i, 'bar');
-    } else {
-        console.log(i);
+// for (let i = 1; i <= 50; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         console.log(i, 'Foo-bar');      
+//     } else if (i % 3 == 0) {
+//         console.log(i, 'Foo');      
+//     } else if (i % 5 == 0) {
+//         console.log(i, 'bar');
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+const products = [
+    {model: 'Oppo a3s', price: 13500, color: 'Blue'},
+    {model: 'Oppo a5s', price: 17500, color: 'Silver'},
+    {model: 'Samsung S10', price: 89000, color: 'Golden'},
+    {model: 'Samsung a21', price: 22400, color: 'Black'},
+    {model: 'Redmi x', price: 19800, color: 'Gray'},
+    {model: 'Apple a13 pro', price: 135000, color: 'Black'}
+]
+
+let cheapest = products[0];
+for (const product of products) {
+    if (product.price < cheapest.price) {
+        cheapest = product;
     }
 }
+console.log(cheapest);
